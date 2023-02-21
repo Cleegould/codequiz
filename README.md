@@ -1,0 +1,2 @@
+# codequiz
+A coding quiz that keeps your high score this is a coding quiz.   This quiz starts when you click start game. It will then ask questions and and give you answers to choose from,  If you get the answer correct you get a point if you get an answer wrong it will deduct 10 seconds from the timer and you will not get a point.  At the end of the game you will see your score and be able to insert your initials to keep track of the scores.
