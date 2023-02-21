@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Test</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="javascript.js"></script>
+    </head>
+    <body>
+        <header class="header">            
+            <span class="width50 floatLeft smText"><a href="#" onclick="getScores()">View Scores</a></span>
+            <span class="width50 floatRight" id="timer"></span>            
+        </header>
+        <main style="clear:both;">
+            <div id="instructions" class="instructions">
+                Click 'Start Quiz' to begin.  For every incorrect answer, you lose 10 seconds.  Correct answers are worth one point
+            </div>
+            <button id="startButton" onclick="startQuiz()">Start Quiz</button> 
+            <div id="scores" class="scores"><div class="floatRight smText pad10"><a href="#" onclick="closeModal();">close</a></div>Scores<div id="allScores"></div></div>
+            <div id="questionContainer"></div>
+            <div id="answerContainer">
+                <div><button class="answerButton" id="answer1Button" onclick="chooseAnswer('a')"></button></div>
+                <div><button class="answerButton" id="answer2Button" onclick="chooseAnswer('b')"></button></div>
+                <div><button class="answerButton" id="answer3Button" onclick="chooseAnswer('c')"></button></div>
+                <div><button class="answerButton" id="answer4Button" onclick="chooseAnswer('d')"></button></div>  
+            </div>
+            <div id="resultContainer"></div>
+            <div id="endContainer">
+                <form class="initialsForm" id="initialsForm">
+                    Enter your initials:
+                    <input type="text" class="initials" id="initialsTxt" name="initials" />
+                    <button type="button" onclick="submitInitials()">Submit</button>
+                </form>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </body>
+</html>
